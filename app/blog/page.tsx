@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Logo } from '@/components/Logo';
 import { WaFloat } from '@/components/WaFloat';
 
 export const metadata = {
@@ -22,6 +23,9 @@ export default function BlogPage() {
       }}
     >
       <div style={{ maxWidth: 520 }}>
+        <div style={{ marginBottom: 32, display: 'flex', justifyContent: 'center' }}>
+          <Logo size={64} href="/" />
+        </div>
         <div
           style={{
             fontSize: 11,

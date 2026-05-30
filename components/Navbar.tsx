@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
+import { Logo } from '@/components/Logo';
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -41,22 +41,7 @@ export function Navbar() {
         }`}
         style={{ height: 68 }}
       >
-        <div className="flex items-center gap-3 min-w-0">
-          <Image
-            src="/logo.png"
-            alt="OneClick Ventures"
-            width={36}
-            height={36}
-            style={{ borderRadius: 6 }}
-            className="shrink-0"
-          />
-          <span
-            className="font-syne truncate"
-            style={{ fontSize: 16, fontWeight: 800, color: '#F0F4FF', letterSpacing: '-0.02em' }}
-          >
-            One<span style={{ color: '#1A56DB' }}>Click</span> Ventures
-          </span>
-        </div>
+        <Logo showWordmark />
 
         <div className="hidden md:flex items-center gap-8">
           {['pillars', 'why', 'how', 'contact'].map((id) => (

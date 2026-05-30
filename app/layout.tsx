@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   title: "OneClick Ventures — Explore. Engage. Enable.",
   description:
     "Platform-first venture engine. We explore market gaps, engage audiences, and enable businesses to scale. Based in Pune, India.",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+    shortcut: "/logo.png",
+  },
 };
 
 export default function RootLayout({

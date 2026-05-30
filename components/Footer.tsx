@@ -1,3 +1,5 @@
+import { Logo } from '@/components/Logo';
+
 export function Footer() {
   return (
     <footer
@@ -11,9 +13,12 @@ export function Footer() {
         className="flex flex-wrap items-center justify-between gap-4"
         style={{ maxWidth: 1200, margin: '0 auto', width: '100%' }}
       >
-        <span style={{ fontSize: 12, color: '#475569' }}>
-          © 2026 OneClick Ventures. All rights reserved.
-        </span>
+        <div className="flex items-center gap-3">
+          <Logo size={28} href="/" />
+          <span style={{ fontSize: 12, color: '#475569' }}>
+            © 2026 OneClick Ventures. All rights reserved.
+          </span>
+        </div>
         <span
           className="font-syne"
           style={{ fontSize: 13, fontWeight: 700, color: '#93C5FD' }}
