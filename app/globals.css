@@ -2,26 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --navy: #050B18;
+  --navy-mid: #0A1628;
+  --navy-card: rgba(10, 22, 40, 0.8);
+  --blue: #1A56DB;
+  --blue-glow: rgba(26, 86, 219, 0.4);
+  --blue-light: #93C5FD;
+  --blue-pale: rgba(147, 197, 253, 0.08);
+  --gold: #C8A951;
+  --text: #F0F4FF;
+  --text-muted: #64748B;
+  --border: rgba(147, 197, 253, 0.1);
+  --green-wa: #25D366;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { scroll-behavior: auto; } /* Lenis handles smooth scroll */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--navy);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.font-syne { font-family: 'Syne', sans-serif; }
+
+/* Glow effect for 3D section backgrounds */
+.glow-blue {
+  box-shadow: 0 0 60px rgba(26, 86, 219, 0.15),
+              0 0 120px rgba(26, 86, 219, 0.06);
+}
+
+/* Section base padding */
+.section-pad { padding: 96px 48px; }
+@media (max-width: 768px) { .section-pad { padding: 64px 24px; } }
+
+/* Frosted glass card */
+.glass-card {
+  background: var(--navy-card);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: 12px;
 }
