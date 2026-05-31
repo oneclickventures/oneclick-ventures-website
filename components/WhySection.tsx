@@ -2,6 +2,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useState, useEffect, useRef } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -9,23 +10,32 @@ const items = [
   {
     title: 'Shared Operating System',
     desc: 'Technology, finance, legal, and GTM infrastructure built once and deployed across every venture.',
+    detail:
+      'Technology, finance, legal, and GTM systems are built once and shared across every venture. Founders focus on growth while operational infrastructure is already in place from day one.',
   },
   {
     title: 'Speed to Market',
-    desc: 'Pre-built launch frameworks cut time from validated idea to first revenue. No starting from zero.',
+    desc: 'Pre-built launch frameworks cut time from validated idea to first revenue.',
+    detail:
+      'Our launch frameworks eliminate months of setup work. Ventures can move from idea validation to customer acquisition and revenue generation significantly faster.',
   },
   {
     title: 'Founder-Operator Model',
-    desc: 'Lean. Each venture led by operators with capital efficiency baked in from day one.',
+    desc: 'Lean. Each venture led by operators with capital efficiency baked in.',
+    detail:
+      'Every company is led by execution-focused operators who understand how to build sustainably. Capital efficiency and accountability are embedded into every decision.',
   },
   {
     title: 'India-First by Design',
-    desc: 'GST compliance, regional distribution, deep understanding of B2B and D2C buyer behavior.',
+    desc: 'GST compliance, regional distribution, and deep buyer understanding.',
+    detail:
+      'Built specifically for Indian markets with compliance systems, regional distribution networks, and insights into both B2B and D2C customer behavior.',
   },
 ];
 
 export function WhySection() {
   const itemsRef = useRef<HTMLDivElement[]>([]);
+  const [activeItem, setActiveItem] = useState(0);
 
   useEffect(() => {
     itemsRef.current.forEach((item, i) => {
@@ -123,12 +133,7 @@ export function WhySection() {
               marginBottom: 32,
             }}
           >
-            Most holding companies write a check and step back. We operate
-            differently. OneClick Ventures embeds itself in the architecture of every
-            business it launches — from the first customer conversation to the systems
-            that make scaling inevitable. Our ventures share a common operating system:
-            proven playbooks, live technology, compliance infrastructure, and a network
-            built specifically for Indian markets.
+            {items[activeItem].detail}
           </p>
           <button
             onClick={scrollToContact}
@@ -156,13 +161,35 @@ export function WhySection() {
               ref={(el) => {
                 if (el) itemsRef.current[i] = el;
               }}
+              onMouseEnter={() => setActiveItem(i)}
+              onClick={() => setActiveItem(i)}
               style={{
-                background: 'rgba(10,22,40,0.8)',
-                border: '1px solid rgba(147,197,253,0.1)',
+                background:
+                 activeItem === i
+                   ? 'rgba(26,86,219,0.15)'
+                   : 'rgba(10,22,40,0.8)',
+
+                border:
+                 activeItem === i
+                   ? '1px solid rgba(26,86,219,0.6)'
+                   : '1px solid rgba(147,197,253,0.1)',
+
                 borderLeft: '3px solid #1A56DB',
                 borderRadius: 12,
                 padding: '24px 28px',
-                opacity: 0,
+
+                transform:
+                 activeItem === i
+                   ? 'translateY(-8px) scale(1.02)'
+                   : 'translateY(0)',
+
+                boxShadow:
+                 activeItem === i
+                   ? '0 20px 40px rgba(26,86,219,0.25)'
+                   : 'none',
+
+                transition: 'all 0.3s ease',
+                cursor: 'pointer',
               }}
             >
               <h4
