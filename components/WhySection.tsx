@@ -10,25 +10,25 @@ const items = [
     title: 'Shared Operating System',
     desc: 'Technology, finance, legal, and GTM infrastructure built once and deployed across every venture.',
     detail:
-      'Technology, finance, legal, and GTM systems are built once and shared across every venture. Founders focus on growth while operational infrastructure is already in place from day one.',
+      'We build core business infrastructure once and leverage it across every venture within the ecosystem. This includes technology platforms, financial management systems, legal frameworks, compliance processes, and go-to-market capabilities that are standardized and scalable. By sharing these foundational resources, new ventures can avoid duplicating costs, reducing both time and capital requirements. Teams gain immediate access to proven tools, expertise, and operational support, allowing them to focus on innovation and growth rather than administrative setup. This unified operating model creates efficiencies, improves consistency, and accelerates execution across the portfolio. The result is a stronger, more resilient venture ecosystem capable of scaling faster and more cost-effectively.',
   },
   {
     title: 'Speed to Market',
     desc: 'Pre-built launch frameworks cut time from validated idea to first revenue.',
     detail:
-      'Our launch frameworks eliminate months of setup work. Ventures can move from idea validation to customer acquisition and revenue generation significantly faster.',
+      'Our pre-built launch frameworks help founders and businesses move from a validated idea to their first paying customers significantly faster. Instead of spending months building processes, systems, and go-to-market strategies from scratch, we provide proven structures that are ready to deploy. This reduces execution delays, minimizes costly trial-and-error, and allows teams to focus on product development and customer acquisition. From market positioning and sales funnels to operational workflows and growth playbooks, every component is designed to accelerate launch readiness. By leveraging frameworks tested across multiple business scenarios, companies can reach revenue-generating milestones with greater confidence and efficiency. The result is a faster, more predictable path from concept to commercial success.',
   },
   {
     title: 'Founder-Operator Model',
     desc: 'Lean. Each venture led by operators with capital efficiency baked in.',
     detail:
-      'Every company is led by execution-focused operators who understand how to build sustainably. Capital efficiency and accountability are embedded into every decision.',
+      'Every venture is led by hands-on operators who combine strategic leadership with day-to-day execution. Rather than building large teams and complex structures early, we prioritize lean operations that maximize output while maintaining strict capital discipline. From the outset, resources are allocated efficiently, ensuring that every investment directly contributes to growth, customer value, or operational improvement. This approach encourages rapid decision-making, accountability, and a deep understanding of the business at every level. By keeping teams agile and focused, ventures can adapt quickly to market opportunities while minimizing unnecessary overhead. Capital efficiency is embedded into the company’s DNA from day one, creating a strong foundation for sustainable growth and long-term value creation.',
   },
   {
     title: 'India-First by Design',
     desc: 'GST compliance, regional distribution, and deep buyer understanding.',
     detail:
-      'Built specifically for Indian markets with compliance systems, regional distribution networks, and insights into both B2B and D2C customer behavior.',
+      'Our ventures are built specifically for the realities and opportunities of the Indian market. From GST compliance and regulatory requirements to regional distribution networks and local business practices, every aspect of the operating model is designed with India in mind. We leverage a deep understanding of both B2B and D2C buyer behavior, enabling products and services to align closely with customer expectations across diverse markets. By recognizing regional preferences, purchasing patterns, and channel dynamics, we create solutions that are practical, scalable, and market-ready. This localized approach helps reduce execution risk, improve customer adoption, and accelerate growth. Rather than adapting global models to fit India, we design businesses from the ground up to succeed within India’s unique economic, cultural, and commercial landscape. The result is stronger market relevance, faster traction, and sustainable long-term growth.',
   },
 ];
 
