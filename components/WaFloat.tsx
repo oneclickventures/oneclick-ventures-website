@@ -1,7 +1,7 @@
 'use client';
 
 const WHATSAPP_URL =
-  'https://wa.me/919529480461?text=Hi%20OneClick%20Ventures%2C%20I%27d%20like%20to%20connect.';
+  'https://wa.me/919970074241?text=Hi%20OneClick%20Ventures%2C%20I%27d%20like%20to%20connect.';
 
 export function WaFloat() {
   return (

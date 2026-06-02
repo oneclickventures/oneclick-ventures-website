@@ -207,7 +207,7 @@ export function ContactSection() {
           </p>
 
           <a
-            href="https://wa.me/919529480461?text=Hi%20OneClick%20Ventures%2C%20I%27d%20like%20to%20connect."
+            href="https://wa.me/919970074241?text=Hi%20OneClick%20Ventures%2C%20I%27d%20like%20to%20connect."
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -232,18 +232,18 @@ export function ContactSection() {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             <a
-              href="tel:+919529480461"
+              href="tel:+919970074241"
               style={{ fontSize: 15, color: '#F0F4FF', textDecoration: 'none' }}
               className="hover:text-[#93C5FD] transition-colors"
             >
-              +91 95294 80461
+              +91 99700 74241
             </a>
             <a
-              href="mailto:support@oneclickventures.in"
+              href="mailto:info@oneclickventures.in"
               style={{ fontSize: 15, color: '#F0F4FF', textDecoration: 'none' }}
               className="hover:text-[#93C5FD] transition-colors"
             >
-              support@oneclickventures.in
+              info@oneclickventures.in
             </a>
             <span style={{ fontSize: 15, color: '#64748B' }}>
               Pune, Maharashtra — India
