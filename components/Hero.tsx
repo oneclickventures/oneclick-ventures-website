@@ -45,30 +45,34 @@ export function Hero() {
       {/* Content */}
       <div style={{ position: 'relative', zIndex: 2, padding: '120px 48px 80px', maxWidth: 1200, width: '100%' }}>
         
-        <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#1A56DB', marginBottom: 24, display: 'flex', alignItems: 'center', gap: 10 }}>
-          <span style={{ display: 'block', width: 28, height: 2, background: '#1A56DB', borderRadius: 1 }} />
-          Platform-First Venture Engine — Pune, 2026
+        <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C4967A', marginBottom: 24, display: 'flex', alignItems: 'center', gap: 10 }}>
+          <span style={{ display: 'block', width: 28, height: 2, background: '#C4967A', borderRadius: 1 }} />
+          Venture Engine — Pune, India — Est. 2026
         </div>
 
         <h1 ref={headlineRef} className="font-syne" style={{ fontSize: 'clamp(44px, 7vw, 80px)', fontWeight: 800, lineHeight: 1.02, letterSpacing: '-0.04em', color: '#F0F4FF', maxWidth: 740, marginBottom: 24, opacity: 0 }}>
-          One snap.<br />
-          <span style={{ color: '#1A56DB' }}>Infinite</span> potential.
+          Building India&apos;s next<br />
+          generation of <span style={{ color: '#1A56DB' }}>businesses.</span>
         </h1>
 
         <p ref={subRef} style={{ fontSize: 16, fontWeight: 300, color: '#64748B', maxWidth: 560, lineHeight: 1.8, marginBottom: 40, opacity: 0 }}>
-          OneClick Ventures identifies market opportunities, builds businesses from the ground up, and gives every brand we launch the infrastructure, systems, and market access to scale fast — across B2B and D2C sectors simultaneously.
+          OneClick Ventures is a platform-first venture engine
+          based in Pune. We explore market gaps, engage the right
+          buyers, and enable every brand we build with shared
+          infrastructure, compliance, and go-to-market systems —
+          so businesses reach revenue faster than they thought possible.
         </p>
 
         <div ref={btnsRef} style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 80, opacity: 0 }}>
           <button
             onClick={() => document.getElementById('pillars')?.scrollIntoView({ behavior: 'smooth' })}
             style={{ background: '#1A56DB', color: '#fff', fontSize: 13, fontWeight: 600, padding: '14px 32px', borderRadius: 4, border: 'none', cursor: 'pointer', letterSpacing: '0.02em' }}>
-            See What We Build
+            See How We Work
           </button>
           <button
-            onClick={() => document.getElementById('how')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             style={{ background: 'transparent', color: '#F0F4FF', fontSize: 13, fontWeight: 500, padding: '14px 32px', borderRadius: 4, border: '1px solid rgba(147,197,253,0.25)', cursor: 'pointer' }}>
-            How We Work
+            Partner With Us
           </button>
         </div>
 

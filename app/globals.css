@@ -17,6 +17,8 @@
   --text-muted: #64748B;
   --border: rgba(147, 197, 253, 0.1);
   --green-wa: #25D366;
+  --rose-gold: #C4967A;
+  --rose-gold-dim: rgba(196, 150, 122, 0.15);
 }
 
 html { scroll-behavior: auto; } /* Lenis handles smooth scroll */
@@ -47,4 +49,9 @@ body {
   backdrop-filter: blur(16px);
   border: 1px solid var(--border);
   border-radius: 12px;
+}
+
+.rose-glow {
+  box-shadow: 0 0 40px rgba(196, 150, 122, 0.08),
+              0 0 80px rgba(196, 150, 122, 0.04);
 }

@@ -21,7 +21,7 @@ export function Footer() {
         </div>
         <span
           className="font-syne"
-          style={{ fontSize: 13, fontWeight: 700, color: '#93C5FD' }}
+          style={{ fontSize: 13, fontWeight: 700, color: '#C4967A' }}
         >
           Explore. Engage. Enable.
         </span>

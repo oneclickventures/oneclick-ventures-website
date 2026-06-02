@@ -105,7 +105,7 @@ export function PillarsSection() {
               </div>
             )}
 
-            <div style={{ fontSize: 10, fontWeight: 700, color: '#1A56DB', letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: 10 }}>
+            <div style={{ fontSize: 10, fontWeight: 700, color: '#C4967A', letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: 10 }}>
               {p.num} / {p.tag}
             </div>
             <h3 className="font-syne" style={{ fontSize: 24, fontWeight: 800, color: '#F0F4FF', marginBottom: 12 }}>
@@ -115,7 +115,7 @@ export function PillarsSection() {
               {p.desc}
             </p>
             {/* Blue bottom bar */}
-            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 3, background: '#1A56DB', transform: 'scaleX(0)', transformOrigin: 'left', transition: 'transform 0.3s ease' }}
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 3, background: '#C4967A', transform: 'scaleX(0)', transformOrigin: 'left', transition: 'transform 0.3s ease' }}
               onMouseEnter={e => (e.currentTarget.style.transform = 'scaleX(1)')}
               onMouseLeave={e => (e.currentTarget.style.transform = 'scaleX(0)')}
             />
